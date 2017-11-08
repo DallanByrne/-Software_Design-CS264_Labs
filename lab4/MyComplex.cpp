@@ -6,14 +6,28 @@
 
 class MyComplex(){
 	
-	comlpex::complex(){
-			real = 0;
-			imagin = 0;
+	MyComplex::complex(){
+		real = 0;
+		imagin = 0;
 	}
 	
-	complex(double realNum, double imaginNum){
+	MyComplex::complex(double realNum, double imaginNum){
 		real = realNum;
 		imagin = imaginNum;
+	}
+	
+	double MyComplex::getReal(){	return real;	}
+	void MyComplex::setReal(realNum){	
+		real = realNum;	
+	}
+	
+	double MyComplex::getImage(){	return imagin;	}
+	void MyComplex::setImage(imaginNum)(	
+		imagin = Num;	
+	)
+	
+	Add(){
+		
 	}
 	
 };
