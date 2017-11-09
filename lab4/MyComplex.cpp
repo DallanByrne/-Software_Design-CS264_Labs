@@ -2,32 +2,41 @@
 #include <iomanip>
 #include <complex>
 #include <cmath>
-#include "MyCompiler.h"
+#include "MyCompilex.h"
 
-class MyComplex(){
+class MyComplex{
 	
-	MyComplex::complex(){
-		real = 0;
-		imagin = 0;
+	MyComplex::MyComplex(){
+			this->real = 0;
+			this->imagin = 0;
 	}
 	
-	MyComplex::complex(double realNum, double imaginNum){
-		real = realNum;
-		imagin = imaginNum;
+	MyComplex::MyComplex(realNum, imaginNum){
+		this->real = realNum;
+		this->imagin = imaginNum;
 	}
-	
-	double MyComplex::getReal(){	return real;	}
-	void MyComplex::setReal(realNum){	
-		real = realNum;	
+
+	double MyComplex::getReal(){	return this->real;	}
+
+	double MyComplex::getImage(){	return this->imagin;	}
+
+	void MyComplex::setReal( realNum)
+	{
+		this->real = num;
 	}
-	
-	double MyComplex::getImage(){	return imagin;	}
-	void MyComplex::setImage(imaginNum)(	
-		imagin = Num;	
-	)
-	
-	Add(){
-		
+
+	void MyComplex::setImage( imaginNum)
+	{
+		this->imagin = imaginNum;
+	}
+
+	void MyComplex::print(){
+		cout<< getReal() << "+" << getImage() <<"i"<< endl;
+	}
+
+	MyComplex::MyComplex Add(const MyComplex &z){
+		real = new double(*z.real);
+		imagin = z.imagin;
 	}
 	
 };
